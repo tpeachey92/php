@@ -1,4 +1,5 @@
-<?php 
+<?php
+// created by Thad Peachey 
 require('lsconnection.php');
 // location where uploaded images go 
 $target_dir = "images/";
@@ -46,6 +47,7 @@ if ($uploadCheck == 0){
 } else {
 	move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
 	echo "The file was uploaded to $target_file";
+}
 }
 ?>
 
